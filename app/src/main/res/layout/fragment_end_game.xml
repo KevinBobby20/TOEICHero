@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.Gameplay.EndGameFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/endgamephoto"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/imgEnd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_55sdp"
+        android:id="@+id/titleEnd"
+        android:textColor="@color/white"
+        android:fontFamily="@font/raleway_bold"
+        android:text="Your Score"
+        app:layout_constraintTop_toBottomOf="@id/imgEnd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_55sdp"
+        android:id="@+id/scoreTemp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/raleway_bold"
+        android:text="55"
+        app:layout_constraintTop_toBottomOf="@id/titleEnd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backMenuBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_52sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintTop_toBottomOf="@id/scoreTemp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/btn_orange"
+        android:text="Main Menu"
+        android:textColor="@color/white"
+        android:fontFamily="@font/raleway_bold"
+        android:textSize="@dimen/_21sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

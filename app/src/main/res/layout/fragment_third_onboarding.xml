@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main"
+    android:layout_height="wrap_content"
+    tools:context=".View.Onboarding.ThirdOnboardingFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/image_2_onboarding"
+            android:layout_width="@dimen/_234sdp"
+            android:layout_height="@dimen/_209sdp"
+            android:src="@drawable/onboarding_3"
+            android:layout_marginTop="@dimen/_40sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/onboarding_2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:fontFamily="@font/raleway_bold"
+            android:textSize="@dimen/_34sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_2_onboarding"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/onboarding_2_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lets Start Your Journey"
+            android:fontFamily="@font/raleway_reguler"
+            android:textSize="@dimen/_17sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/onboarding_2_title"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@id/onboarding_2_desc"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/btn_orange"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:fontFamily="@font/raleway_bold"
+            android:textSize="@dimen/_21sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/regisBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/loginBtn"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/btn_orange_outline"
+            android:text="Register"
+            android:textColor="@color/secondary"
+            android:fontFamily="@font/raleway_bold"
+            android:textSize="@dimen/_21sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
